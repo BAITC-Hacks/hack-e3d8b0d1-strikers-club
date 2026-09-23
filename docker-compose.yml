@@ -7,6 +7,7 @@ services:
       - .env
     environment:
       REDIS_URL: redis://redis:6379/0
+      UPLOAD_SCAN_HOST: clamav
     ports:
       - "127.0.0.1:8000:8000"
     depends_on:

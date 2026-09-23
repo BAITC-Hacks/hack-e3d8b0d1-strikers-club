@@ -1,0 +1,123 @@
+.ekt-welcome {
+  padding: 20px 54px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ekt-welcome-symbol {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(140deg, #eff5ff, #e7efff);
+  border: 1px solid #e2ebfa;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  color: #2562d2;
+  margin-bottom: 14px;
+}
+.ekt-welcome-symbol > span {
+  position: absolute;
+  right: -5px;
+  bottom: -3px;
+  width: 23px;
+  height: 23px;
+  background: white;
+  border: 1px solid #e4ebf6;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+.ekt-eyebrow {
+  font-size: 8px;
+  font-weight: 650;
+  color: #8496b1;
+  letter-spacing: 1.65px;
+  margin-bottom: 11px;
+}
+.ekt-welcome h1 {
+  font-size: clamp(26px, 2.5vw, 33px);
+  line-height: 1.25;
+  letter-spacing: -1.3px;
+  font-weight: 650;
+  text-align: center;
+  margin: 0;
+}
+.ekt-welcome h1 > span {
+  color: #2264db;
+}
+.ekt-welcome > p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #8b96a7;
+  text-align: center;
+  margin: 10px 0 18px;
+}
+.ekt-prompt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+.ekt-prompt {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 12px;
+  min-width: 0;
+  background: white;
+  border: 1px solid #e7ebf2;
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: #233b60;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    transform 0.15s;
+}
+.ekt-prompt:hover {
+  background: #f8faff;
+  border-color: #bed2f3;
+  transform: translateY(-1px);
+}
+.ekt-prompt:focus-visible,
+.ekt-quick-prompts button:focus-visible {
+  outline: 2px solid #2566d7;
+  outline-offset: 3px;
+}
+.ekt-prompt-icon {
+  flex-shrink: 0;
+  color: #587cbb;
+  width: 33px;
+  height: 33px;
+  display: grid;
+  place-items: center;
+  background: #f3f6fb;
+  border-radius: 9px;
+}
+.ekt-prompt strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.ekt-prompt small {
+  font-size: 10px;
+  color: #97a1b1;
+  display: block;
+  margin-top: 4px;
+}
+.ekt-prompt-arrow {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: #a4b0c2;
+}
+.ekt-upload-hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #9aa5b5;
+  font-size: 10px;
+  padding-top: 12px;
+}

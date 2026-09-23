@@ -1,0 +1,124 @@
+.ekt-message-list {
+  padding: 18px 28px 20px;
+}
+.ekt-day-label {
+  text-align: center;
+  color: #adb6c5;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+.ekt-message {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 24px;
+}
+.ekt-message-avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 29px;
+  height: 29px;
+  color: #2e67c9;
+  background: #edf3fe;
+  border-radius: 9px;
+}
+.ekt-message-body {
+  min-width: 0;
+  max-width: 89%;
+}
+.ekt-message-author {
+  font-size: 10px;
+  font-weight: 600;
+  color: #8493a9;
+  display: block;
+  padding: 4px 0 7px;
+}
+.ekt-bubble {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #41526d;
+  background: #f5f7fb;
+  border-radius: 0 13px 13px;
+  padding: 12px 15px;
+  overflow-wrap: anywhere;
+}
+.ekt-bubble p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.ekt-bubble-error {
+  background: #fff2f1;
+  color: #a13c37;
+}
+.ekt-message-user {
+  justify-content: flex-end;
+}
+.ekt-message-user .ekt-bubble {
+  background: #edf3ff;
+  color: #2d4b79;
+  border-radius: 13px 0 13px 13px;
+}
+.ekt-message-sent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  color: #a8b4c6;
+  font-size: 9px;
+  margin-top: 6px;
+}
+.ekt-sent-file {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  padding: 3px 0;
+}
+.ekt-sent-file + p {
+  margin-top: 5px;
+}
+.ekt-products {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+  max-width: 490px;
+}
+.ekt-typing {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a2adc0;
+  padding: 0 0 10px;
+}
+.ekt-typing > span {
+  display: flex;
+  gap: 4px;
+}
+.ekt-typing i {
+  width: 5px;
+  height: 5px;
+  background: #7d9fd3;
+  border-radius: 50%;
+  animation: ekt-pulse 1s infinite;
+}
+.ekt-typing i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.ekt-typing i:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.ekt-typing small {
+  font-size: 10px;
+}
+@keyframes ekt-pulse {
+  0%,
+  70%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  35% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+}

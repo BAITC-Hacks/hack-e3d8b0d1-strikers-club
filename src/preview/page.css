@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f2f5f9;
+  color: #172b4b;
+}
+button,
+input,
+textarea {
+  font: inherit;
+}
+.preview-page {
+  position: relative;
+  isolation: isolate;
+  min-height: 100dvh;
+  padding: 30px 6vw 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(33, 74, 129, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33, 74, 129, 0.035) 1px, transparent 1px),
+    radial-gradient(ellipse at 79% 52%, #dfebfb 0%, transparent 51%), #f5f7fa;
+  background-size:
+    72px 72px,
+    72px 72px,
+    auto,
+    auto;
+}
+.preview-topbar {
+  position: relative;
+  z-index: 1;
+  max-width: 1360px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.preview-brand {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  color: #173567;
+  text-decoration: none;
+}
+.preview-brand > span:first-child {
+  font-size: 39px;
+  letter-spacing: -3px;
+  font-weight: 850;
+  line-height: 1;
+}
+.brand-dot {
+  color: #2467d7;
+}
+.preview-brand-caption {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  padding-top: 5px;
+}
+.preview-backlink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #7b879b;
+}
+.preview-backlink:hover {
+  color: #2467d7;
+}
+.preview-hero {
+  position: relative;
+  max-width: 1360px;
+  min-height: calc(100dvh - 178px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+.preview-hero-copy {
+  position: relative;
+  z-index: 1;
+}
+.preview-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 28px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #577192;
+  letter-spacing: 0.2px;
+}
+.preview-eyebrow > span {
+  width: 6px;
+  height: 6px;
+  background: #2b6ee3;
+  border-radius: 50%;
+}
+.preview-hero h1 {
+  margin: 0;
+  color: #18345c;
+  font-size: clamp(44px, 5.4vw, 80px);
+  font-weight: 650;
+  line-height: 1.1;
+  letter-spacing: -3.8px;
+}
+.preview-hero h1 > span {
+  color: #286bda;
+}
+.preview-description {
+  margin: 28px 0 0;
+  color: #7b899c;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.preview-hero-line {
+  width: 44px;
+  height: 1px;
+  margin-top: 36px;
+  background: #b9c9dc;
+}
+.preview-note {
+  margin: 15px 0 0;
+  color: #8b99ab;
+  font-size: 11px;
+  letter-spacing: 0.2px;
+}

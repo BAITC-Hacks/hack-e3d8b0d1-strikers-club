@@ -1,0 +1,76 @@
+@media (min-width: 601px) and (max-height: 880px) {
+  .ekt-welcome {
+    padding-top: 22px;
+  }
+  .ekt-welcome-symbol {
+    width: 51px;
+    height: 51px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+  }
+  .ekt-welcome > p {
+    margin-bottom: 18px;
+  }
+  .ekt-prompt {
+    padding: 12px;
+  }
+  .ekt-upload-hint {
+    padding-top: 14px;
+  }
+  .ekt-welcome h1 {
+    font-size: 29px;
+  }
+}
+@media (min-width: 601px) and (max-height: 780px) {
+  .ekt-welcome {
+    padding-top: 20px;
+  }
+  .ekt-welcome-symbol {
+    display: none;
+  }
+  .ekt-welcome h1 {
+    font-size: 27px;
+  }
+  .ekt-upload-hint {
+    display: none;
+  }
+  .ekt-composer-area {
+    padding-top: 8px;
+  }
+}
+.ekt-window:not(.ekt-expanded) .ekt-welcome {
+  padding: 22px 22px 14px;
+}
+.ekt-window:not(.ekt-expanded) .ekt-welcome h1 {
+  font-size: 24px;
+  letter-spacing: -0.8px;
+}
+.ekt-window:not(.ekt-expanded) .ekt-welcome > p {
+  font-size: 11px;
+  margin: 10px 0 18px;
+}
+.ekt-window:not(.ekt-expanded) .ekt-prompt {
+  gap: 9px;
+  padding: 11px;
+}
+.ekt-window:not(.ekt-expanded) .ekt-prompt strong {
+  font-size: 11px;
+}
+.ekt-window:not(.ekt-expanded) .ekt-prompt small {
+  font-size: 9px;
+}
+.ekt-window:not(.ekt-expanded) .ekt-prompt-arrow,
+.ekt-window:not(.ekt-expanded) .ekt-mode-right {
+  display: none;
+}
+.ekt-window:not(.ekt-expanded) .ekt-composer-area {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.ekt-window:not(.ekt-expanded) .ekt-quick-prompts {
+  gap: 5px;
+}
+.ekt-window:not(.ekt-expanded) .ekt-quick-prompts > span,
+.ekt-window:not(.ekt-expanded) .ekt-quick-prompts > button:last-child {
+  display: none;
+}

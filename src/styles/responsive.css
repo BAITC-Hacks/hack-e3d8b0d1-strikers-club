@@ -1,0 +1,152 @@
+@media (max-width: 600px) {
+  .ekt-window,
+  .ekt-expanded {
+    width: 100%;
+    height: 100dvh;
+    min-height: 0;
+    border: 0;
+    border-radius: 0;
+    position: fixed;
+    inset: 0;
+    margin: 0;
+  }
+  .ekt-launcher-wrap {
+    right: 18px;
+    bottom: max(18px, env(safe-area-inset-bottom));
+  }
+  .ekt-launcher-wrap.ekt-launcher-open {
+    display: none;
+  }
+  .ekt-launcher-wrap .ekt-launcher {
+    width: 56px;
+    height: 56px;
+  }
+  .ekt-header {
+    padding: 16px;
+    gap: 10px;
+  }
+  .ekt-avatar {
+    width: 37px;
+    height: 37px;
+    border-radius: 11px;
+  }
+  .ekt-heading > div {
+    font-size: 14px;
+  }
+  .ekt-heading > span {
+    font-size: 9px;
+  }
+  .ekt-header-actions {
+    gap: 0;
+  }
+  .ekt-header-actions .MuiIconButton-root {
+    padding: 7px;
+  }
+  .ekt-header-separator,
+  .ekt-expand-button,
+  .ekt-mode-right {
+    display: none !important;
+  }
+  .ekt-mode-strip {
+    padding: 8px 16px;
+    font-size: 9px;
+  }
+  .ekt-welcome {
+    padding: 22px 20px 16px;
+  }
+  .ekt-welcome h1 {
+    font-size: 24px;
+    letter-spacing: -0.9px;
+  }
+  .ekt-welcome > p {
+    font-size: 11px;
+  }
+  .ekt-welcome-symbol {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 14px;
+  }
+  .ekt-prompt-grid {
+    gap: 8px;
+  }
+  .ekt-prompt {
+    padding: 13px 11px;
+    gap: 9px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .ekt-prompt-icon {
+    width: 29px;
+    height: 29px;
+  }
+  .ekt-prompt > span:nth-child(2) {
+    flex-basis: 100%;
+  }
+  .ekt-prompt-arrow {
+    position: absolute;
+    right: 11px;
+    top: 18px;
+  }
+  .ekt-prompt strong {
+    font-size: 11px;
+  }
+  .ekt-prompt small {
+    font-size: 9px;
+  }
+  .ekt-upload-hint {
+    font-size: 9px;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .ekt-upload-hint svg {
+    flex-shrink: 0;
+  }
+  .ekt-composer-area {
+    padding: 10px 14px max(14px, env(safe-area-inset-bottom));
+  }
+  .ekt-quick-prompts {
+    gap: 5px;
+  }
+  .ekt-quick-prompts > span,
+  .ekt-quick-prompts > button:last-child {
+    display: none;
+  }
+  .ekt-quick-prompts > button {
+    font-size: 9px;
+  }
+  .ekt-composer textarea {
+    font-size: 16px;
+    height: 49px;
+  }
+  .ekt-composer-bottom i,
+  .ekt-enter-hint {
+    display: none;
+  }
+  .ekt-composer-note {
+    font-size: 8px;
+  }
+  .ekt-composer-note > span {
+    display: none;
+  }
+  .ekt-message-list {
+    padding: 20px 14px;
+  }
+  .ekt-message-body {
+    max-width: calc(100% - 36px);
+  }
+  .ekt-message-user .ekt-message-body {
+    max-width: 90%;
+  }
+  .ekt-bubble {
+    font-size: 12px;
+    padding: 11px 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ekt-assistant *,
+  .ekt-assistant *::before {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

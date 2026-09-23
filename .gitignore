@@ -13,4 +13,8 @@ __pycache__/
 htmlcov/
 dist/
 build/
+node_modules/
+coverage/
+*.log
 .DS_Store
+backend/

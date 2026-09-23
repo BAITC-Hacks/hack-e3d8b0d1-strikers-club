@@ -1,0 +1,11 @@
+node_modules
+dist
+coverage
+package-lock.json
+*.log
+backend/
+app/
+tests/
+docs/
+.github/
+docker-compose.yml
