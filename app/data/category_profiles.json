@@ -1,0 +1,10 @@
+[
+  {"name":"circuit_protection","aliases":["автомат","узо","дифавтомат","circuit breaker","rcd"],"critical":["current","voltage","poles","trip_curve","breaking_capacity","protection_type"],"functional":["frequency","series"],"dimensional":["width","height","depth","mounting"]},
+  {"name":"cable","aliases":["кабель","провод","cable","wire"],"critical":["material","cores","cross_section","voltage","insulation","installation"],"functional":["length","fire_rating"],"dimensional":["diameter"]},
+  {"name":"contactor_relay","aliases":["контактор","реле","contactor","relay"],"critical":["current","coil_voltage","contacts","supply_type","utilization_category"],"functional":["frequency","series"],"dimensional":["width","height","depth","mounting"]},
+  {"name":"lighting","aliases":["светильник","ламп","luminaire","lamp","lighting"],"critical":["power","voltage","socket","ip"],"functional":["luminous_flux","color_temperature"],"dimensional":["width","height","depth","diameter","mounting"]},
+  {"name":"socket_switch","aliases":["розетк","выключатель бытовой","socket","wall switch"],"critical":["series","mounting","positions","current","voltage","ip","mechanism"],"functional":["color"],"dimensional":["width","height","depth"]},
+  {"name":"power_supply","aliases":["блок питания","источник питания","power supply","power supplies"],"critical":["input_voltage","output_voltage","current","power","supply_type"],"functional":["ip","housing"],"dimensional":["width","height","depth","mounting"]},
+  {"name":"enclosure","aliases":["щит","корпус","enclosure","cabinet"],"critical":["width","height","depth","material","ip","mounting","modules","panel"],"functional":["color"],"dimensional":[]},
+  {"name":"terminal","aliases":["клемм","terminal"],"critical":["cross_section","current","voltage","connection","compatible_series"],"functional":["color"],"dimensional":["width","height","depth","mounting"]}
+]

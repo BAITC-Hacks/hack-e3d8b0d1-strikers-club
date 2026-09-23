@@ -1,0 +1,85 @@
+services:
+  api:
+    build:
+      context: .
+      target: runtime
+    env_file:
+      - .env
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    init: true
+    mem_limit: 512m
+    pids_limit: 128
+    networks:
+      - frontend
+      - cache
+
+  redis:
+    image: redis:7.4-alpine
+    command:
+      - redis-server
+      - --save
+      - ""
+      - --appendonly
+      - "no"
+      - --dir
+      - /data
+      - --maxmemory
+      - 128mb
+      - --maxmemory-policy
+      - noeviction
+      - --protected-mode
+      - "no"
+    user: "999:999"
+    restart: unless-stopped
+    read_only: true
+    # Redis has no disk-backed data directory, even if persistence is enabled accidentally.
+    tmpfs:
+      - /data:size=16m,uid=999,gid=999,mode=0700
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 192m
+    pids_limit: 64
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 2s
+      retries: 5
+      start_period: 5s
+    networks:
+      - cache
+
+  clamav:
+    image: clamav/clamav:1.4
+    profiles: ["uploads"]
+    restart: unless-stopped
+    # Scanner scratch files are RAM-only. Signature databases contain no user data.
+    tmpfs:
+      - /tmp:size=128m,mode=1777
+    mem_limit: 4g
+    pids_limit: 128
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - cache
+      - frontend
+
+networks:
+  frontend:
+  cache:
+    internal: true
