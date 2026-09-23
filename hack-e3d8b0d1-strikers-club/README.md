@@ -1,2 +1,3 @@
 # hack-e3d8b0d1-strikers-club
-Hackathon team repository for Strikers Club
+
+Hackathon team repository for koschy team
