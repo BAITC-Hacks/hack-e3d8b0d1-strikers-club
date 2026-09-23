@@ -1,4 +1,4 @@
-# Strikers Club × EKT
+# EKT x Kochshi
 
 ## ИИ-ассистент по электротехнике
 
